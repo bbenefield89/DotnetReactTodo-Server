@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/dotnet_react_todo.csproj": {}
+  },
+  "projects": {
+    "/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/dotnet_react_todo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/dotnet_react_todo.csproj",
+        "projectName": "dotnet_react_todo",
+        "projectPath": "/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/dotnet_react_todo.csproj",
+        "packagesPath": "/home/brandon/.nuget/packages/",
+        "outputPath": "/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/brandon/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

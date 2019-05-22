@@ -1,0 +1,14 @@
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/bin/Debug/netcoreapp2.2/dotnet_react_todo.deps.json
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/bin/Debug/netcoreapp2.2/dotnet_react_todo.runtimeconfig.json
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/bin/Debug/netcoreapp2.2/dotnet_react_todo.runtimeconfig.dev.json
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/bin/Debug/netcoreapp2.2/dotnet_react_todo.dll
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/bin/Debug/netcoreapp2.2/dotnet_react_todo.pdb
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.csprojAssemblyReference.cache
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.csproj.CoreCompileInputs.cache
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.RazorAssemblyInfo.cache
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.RazorAssemblyInfo.cs
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.AssemblyInfoInputs.cache
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.AssemblyInfo.cs
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.RazorTargetAssemblyInfo.cache
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.dll
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.pdb
