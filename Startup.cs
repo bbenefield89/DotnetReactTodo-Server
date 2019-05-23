@@ -17,6 +17,9 @@ namespace dotnet_react_todo
 {
     public class Startup
     {
+
+        readonly string DotnetReactTodoCorsPolicy = "dotnet_react_todo_cors_policy";
+        
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,9 +30,20 @@ namespace dotnet_react_todo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // sets cors polocy
+            services.AddCors(options =>
+            {
+                options.AddPolicy(DotnetReactTodoCorsPolicy, builder =>
+                {
+                    builder.WithOrigins("http://localhost:3000");
+                });
+            });
+            
+            // sets DB connection to PSQL
             services.AddDbContext<TodoContext>(options => {
                 options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"));
             });
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -40,6 +54,9 @@ namespace dotnet_react_todo
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            // tells dotnet to use our cors policy
+            app.UseCors(DotnetReactTodoCorsPolicy);
 
             app.UseMvc();
         }

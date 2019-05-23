@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -30,7 +31,7 @@ namespace dotnet_react_todo.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<TodoItem>>> Gettodos()
         {
-            return await _context.todos.ToListAsync();
+            return Ok(await _context.todos.ToListAsync());
         }
 
         // GET: api/Todo/5
@@ -44,7 +45,7 @@ namespace dotnet_react_todo.Controllers
                 return NotFound();
             }
 
-            return todoItem;
+            return Ok(todoItem);
         }
 
         // POST /api/todo
@@ -53,21 +54,12 @@ namespace dotnet_react_todo.Controllers
         {
             await _context.todos.AddAsync(todoItem);
             await _context.SaveChangesAsync();
-            return todoItem;
+            return Created("/api/todo", todoItem);
         }
-
-        // // PUT /api/todo/1
-        // [HttpPut]
-        // public async Task<ActionResult<TodoItem>> PutTodoItem([FromBody] TodoItem todoItem)
-        // {
-        //     _context.Entry(todoItem).State = EntityState.Modified;
-        //     await _context.SaveChangesAsync();
-        //     return todoItem;
-        // }
 
         // PUT: api/Todo/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutTodoItem(long id, [FromBody] TodoItem item)
+        public async Task<IActionResult> PutTodoItem(int id, [FromBody] TodoItem item)
         {
             if (id != item.id)
             {
@@ -77,6 +69,21 @@ namespace dotnet_react_todo.Controllers
             _context.Entry(item).State = EntityState.Modified;
             await _context.SaveChangesAsync();
             return Ok(item);
+        }
+
+        // DELETE: api/todo/1
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteTodoItem(int id, [FromBody] TodoItem todoItem)
+        {
+            IActionResult response = null;
+            if (id != todoItem.id)
+            {
+                response = BadRequest();
+            }
+            _context.todos.Remove(todoItem);
+            await _context.SaveChangesAsync();
+            response = Ok(todoItem);
+            return response;
         }
     }
 }
