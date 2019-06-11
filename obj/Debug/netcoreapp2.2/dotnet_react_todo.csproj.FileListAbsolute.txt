@@ -12,3 +12,5 @@
 /home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.RazorTargetAssemblyInfo.cache
 /home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.dll
 /home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.pdb
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/bin/Debug/netcoreapp2.2/dotnet_react_todo.Views.dll
+/home/brandon/Desktop/dev/personal/web/dotnet/dotnet_react_todo/obj/Debug/netcoreapp2.2/dotnet_react_todo.csproj.CopyComplete

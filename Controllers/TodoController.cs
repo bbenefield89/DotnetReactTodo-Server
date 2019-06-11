@@ -18,13 +18,13 @@ namespace dotnet_react_todo.Controllers
         {
             _context = context;
 
-            if (_context.todos.Count() == 0)
-            {
-                // Create a new TodoItem if collection is empty,
-                // which means you can't delete all todos.
-                _context.todos.Add(new TodoItem { title = "Item1", is_complete = "false" });
-                _context.SaveChanges();
-            }
+            // if (_context.todos.Count() == 0)
+            // {
+            //     // Create a new TodoItem if collection is empty,
+            //     // which means you can't delete all todos.
+            //     _context.todos.Add(new TodoItem { title = "Item1", is_complete = "false" });
+            //     _context.SaveChanges();
+            // }
         }
 
         // GET: api/Todo
